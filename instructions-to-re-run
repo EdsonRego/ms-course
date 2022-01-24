@@ -1,0 +1,20 @@
+#Instruções para Re-executar este projeto.
+##Abrir o Powershell como administrador.
+##Consultar todos os container: docker ps -a
+Observação, caso os container não existam, recriar os contairners conforme instruções do Readme do Branch Docker
+##Re-iniciar os container listados: docker start <número do container>
+Sequência:
+1. Banco de dados Postgres: hr-worker
+2. Banco de dados Postgres: hr-user
+###Acessar a ferramenta pgAdmin e fazer a criação e das tabelas
+Observações:
+a) Obter programa SQL de criação das tabelas no respectivo Diretório Windows dos Projetos hr-user e hr-worker, arquivo data.sql Pasta Raiz.
+b) Fazer o Seed dos Banco de Dados - Os dados para seed estão no arquivo data.sql do diretório "resources" de cada projeto.
+3. hr-config-server
+4. hr-eureka-server
+5. hr-oauth
+6. hr-api-gateway-zuul
+7. hr-worker
+8. hr-user
+9. hr-payroll
+###Para testes, usar a ferramenta Postman
