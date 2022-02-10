@@ -4,11 +4,15 @@
 Observação, caso os container não existam, recriar os contairners conforme instruções do Readme do Branch Docker
 ##Re-iniciar os container listados: docker start <número do container>
 Sequência:
-1. Banco de dados Postgres: hr-worker
-2. Banco de dados Postgres: hr-user
+1. Banco de dados Postgres: hr-worker   -> docker start 1fb1443ac7d4
+2. Banco de dados Postgres: hr-user     -> docker start 87be2a889154
 ###Acessar a ferramenta pgAdmin e fazer a criação e das tabelas
 Observações:
 a) Obter programa SQL de criação das tabelas no respectivo Diretório Windows dos Projetos hr-user e hr-worker, arquivo data.sql Pasta Raiz.
+INSERT INTO tb_worker (name, daily_Income) VALUES ('Bob', 200.0);
+INSERT INTO tb_worker (name, daily_Income) VALUES ('Maria', 300.0);
+INSERT INTO tb_worker (name, daily_Income) VALUES ('Alex', 250.0);
+
 b) Fazer o Seed dos Banco de Dados - Os dados para seed estão no arquivo data.sql do diretório "resources" de cada projeto.
 3. hr-config-server
 4. hr-eureka-server
